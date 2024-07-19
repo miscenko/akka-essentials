@@ -161,6 +161,7 @@ object ChildActors {
   }
 
   def main(args: Array[String]): Unit = {
+    //demoParentChild()
     demoParentChild_v2()
   }
 }

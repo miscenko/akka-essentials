@@ -128,6 +128,8 @@ object Supervision {
     place the most specific exception handlers INSIDE and the most general exception handlers OUTSIDE.
    */
   def main(args: Array[String]): Unit = {
+    //demoCrash()
+    //demoWithParent()
     demoSupervisionWithRestart()
   }
 }

@@ -30,7 +30,7 @@ class TimedAssertionsSpec extends ScalaTestWithActorTestKit with AnyWordSpecLike
     "v2: reply with the meaning of life in between 0.5 and 1s" in {
       worker ! Work(probe.ref)
 
-      probe.within(500.millis, 1.second) {
+      probe.within(400.millis, 1.second) {
         // scenario, run as many assertions as you like
         probe.expectMessage(WorkResult(42))
       }

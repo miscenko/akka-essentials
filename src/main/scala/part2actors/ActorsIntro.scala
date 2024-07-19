@@ -159,5 +159,7 @@ object ActorsIntro {
 
   def main(args: Array[String]): Unit = {
     demoWeirdActor()
+    // demoSimpleActor()
+    // testPerson()
   }
 }

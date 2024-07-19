@@ -15,7 +15,7 @@ class EssentialTestingSpec extends ScalaTestWithActorTestKit with AnyWordSpecLik
 
     "send back a duplicated message" in {
       // code for testing
-      val simpleActor = testKit.spawn(SimpleActor(), "simpleActor") // actor under test
+      val simpleActor = testKit.spawn(SimpleActor(), "simpleActor1") // actor under test
       val probe = testKit.createTestProbe[SimpleProtocol]() // "inspector"
 
       // scenario

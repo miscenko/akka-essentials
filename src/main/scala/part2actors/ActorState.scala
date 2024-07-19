@@ -117,6 +117,7 @@ object ActorState {
   }
 
   def main(args: Array[String]): Unit = {
+    //demoSimpleHuman()
     demoWordCounter()
   }
 }

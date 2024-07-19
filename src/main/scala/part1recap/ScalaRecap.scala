@@ -125,6 +125,6 @@ object ScalaRecap {
   val daniel: Person = "Daniel" // string2Person("Daniel")
 
   def main(args: Array[String]): Unit = {
-
+    println(checkerboard_v2.mkString(","))
   }
 }
