@@ -61,6 +61,9 @@ object AkkaConfiguration {
   }
 
   def main(args: Array[String]): Unit = {
+    //demoInlineConfig()
+    //demoConfigFile()
+    //demoSeparateConfigFile()
     demoOtherFileFormats()
   }
 }

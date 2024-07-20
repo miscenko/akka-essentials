@@ -58,6 +58,7 @@ object RoutersDemo {
   }
 
   def main(args: Array[String]): Unit = {
+    //demoPoolRouter()
     demoGroupRouter()
   }
 }

@@ -75,6 +75,7 @@ object AskDemo {
   }
 
   def main(args: Array[String]): Unit = {
+    //askSimple()
     askFromWithinAnotherActor()
   }
 }
