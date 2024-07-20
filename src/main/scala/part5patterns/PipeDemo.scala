@@ -60,11 +60,12 @@ object PipeDemo {
     val userGuardian = Behaviors.setup[Unit] { context =>
       val phoneCallActor = context.spawn(PhoneCallActor(), "phoneCallActor")
 
+      phoneCallActor ! FindAndCallPhoneNumber("Daniel")
       phoneCallActor ! FindAndCallPhoneNumber("Superman")
 
       Behaviors.empty
     }
 
-    ActorSystem(userGuardian, "DemoPipePattern").withFiniteLifespan(2.seconds)
+    ActorSystem(userGuardian, "DemoPipePattern").withFiniteLifespan(5.seconds)
   }
 }
